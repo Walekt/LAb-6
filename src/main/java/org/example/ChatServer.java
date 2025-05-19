@@ -14,6 +14,7 @@ class ChatServer {
     private static final Logger logger = LoggerFactory.getLogger(ChatServer.class);
     public static final Map<String, ClientHandler> clients = new ConcurrentHashMap<>();
 
+
     public static void main(String[] args) {
         logger.info("Консольный чат запущен с портом {}", PORT);
         try (ServerSocket serverSocket = new ServerSocket(PORT)) {
